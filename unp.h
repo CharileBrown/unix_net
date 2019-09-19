@@ -1,3 +1,7 @@
+#ifndef _UNP_
+#define _UNP_
+
+#include <stdarg.h>
 #include <sys/types.h>
 #include <stdio.h>
 #include <sys/time.h>
@@ -13,3 +17,14 @@
 #include <sys/uio.h>
 #include <sys/wait.h>
 #include <sys/select.h>
+#include <string.h>
+#include<arpa/inet.h>  
+
+#define MAXLINE 1024
+
+#include "my_err.h"
+
+typedef struct sockaddr SA;
+
+
+#endif
